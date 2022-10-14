@@ -106,12 +106,16 @@ button:hover {
 
 /*--------- DESKTOP ---------*/
 
-@media (min-width:1140px) {
+@media (min-width:35rem) {
+
+    body{
+        padding: 1rem;
+    }
     .container {
         display: flex;
         flex-direction: row;
         max-width: 990px;
-        height:450px;
+        border-radius: 15px;  
     }
 
     p {
