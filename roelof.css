@@ -23,6 +23,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 1rem; 
 }
 
 
@@ -42,13 +43,17 @@ p {
 
 img{
     margin-bottom: 30px;
+    width: 64px; 
+    height: 40px;  
 
 }
 
-button{
+a {
     padding: 8px 25px;
     border-radius: 30px;
     border:3px solid white;
+    text-decoration: none;
+    background-color: white;
 }
 
 .container {
@@ -61,17 +66,25 @@ button{
 
 .card {
     padding: 40px;
+    display: flex; 
+    flex-direction: column;
 }
 
 .sedans {
     background-color: var(--orange);
 }
 
-.sedans button {
+.btn {
+    margin-top: auto;
+    padding: 1rem;
+    text-align: center;
+    font-size: 15px;   
+}
+.btn_sedan {
     color: var(--orange);
 }
 
-.sedans button:hover{
+.btn_sedan:hover{
     background-color:var(--orange);
 } 
 
@@ -79,11 +92,11 @@ button{
     background-color: var(--dark-cyan);
 }
 
-.suvs button{
+.btn_suvs{
     color: var(--dark-cyan);
 }
 
-.suvs button:hover{
+.btn_suvs:hover{
     background-color: var(--dark-cyan);
 }
 
@@ -91,17 +104,18 @@ button{
     background-color: var(--very-dark-cyan);
 }
 
-.luxury button{
+.btn_luxury{
     color: var(--very-dark-cyan);
 }
 
-.luxury button:hover{
+.btn_luxury:hover{
     background-color: var(--very-dark-cyan);
 }
 
-button:hover {
+.btn:hover {
     color: var(--white);
     cursor: pointer;
+    transition: background-color 1s ease;
 }
 
 /*--------- DESKTOP ---------*/
