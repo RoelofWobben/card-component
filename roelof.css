@@ -16,7 +16,7 @@
 /*--------- MOBILE FIRST ---------*/
 
 body{
-    font-size: 15px;
+    font-size: 0.937rem; 
     font-family: 'Lexend Deca', sans-serif;
     background-color: var(--gray);
     min-height: 100vh;
@@ -68,9 +68,8 @@ a {
 }
 
 .card {
-    padding: 40px;
-    display: flex; 
-    flex-direction: column;
+    flex: 1  1 33%;
+    padding: 40px;  
 }
 
 .sedans {
